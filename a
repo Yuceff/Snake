@@ -1,0 +1,14 @@
+if(velocityY==-1 && velocityX == 0){
+        html+=`<div class="head" style='grid-area: ${snakeBody[0][1]} / ${snakeBody[0][0]};background-image: url("snakehead.png");transform: rotate(-90deg)';></div>`;
+    }
+    else if(velocityY==0 && velocityX == -1){
+        html+=`<div class="head" style='grid-area: ${snakeBody[0][1]} / ${snakeBody[0][0]};background-image:url("snakehead.png");'></div>`;
+
+    }
+    else if(velocityY==0 && velocityX == 1){
+        html+=`<div class="head" style='grid-area: ${snakeBody[0][1]} / ${snakeBody[0][0]};background-image:url("snakehead.png");transform: rotate(180deg);'></div>`;
+
+    }
+    else{
+        html += `<div class="nigga" style='grid-area: ${snakeBody[i][1]} / ${snakeBody[i][0]};background-image:url("last.png");transform: rotate(90deg)'></div>`;
+    }
